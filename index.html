@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,234 +7,236 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {
-      background: linear-gradient(135deg, #0f0a1f, #1a0033);
-    }
-
-    .neon-glow {
-      box-shadow: 0 0 25px rgba(139, 92, 246, 0.6),
-        0 0 40px rgba(236, 72, 153, 0.4);
+    body { background: linear-gradient(135deg, #0f0a1f, #1a0033); }
+    .neon-glow { box-shadow: 0 0 25px rgba(139,92,246,0.6), 0 0 40px rgba(236,72,153,0.4); }
+    @media (max-width: 768px) {
+      .resume-grid { display: flex; flex-direction: column; }
     }
   </style>
 </head>
-
 <body class="min-h-screen py-8 md:py-12 font-sans">
+<div class="max-w-6xl mx-auto px-4 md:px-6">
+  <div class="grid md:grid-cols-12 gap-6 md:gap-8 bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl">
 
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
-    <div
-      class="grid md:grid-cols-12 gap-6 md:gap-8 bg-zinc-950 border border-zinc-800 rounded-3xl overflow-hidden shadow-2xl">
+    <!-- LEFT COLUMN -->
+    <div class="md:col-span-5 bg-zinc-900 p-6 md:p-8 space-y-8 md:space-y-10">
 
-      <!-- ==================== LEFT COLUMN ==================== -->
-      <div class="md:col-span-5 bg-zinc-900 p-6 md:p-8 space-y-8 md:space-y-10">
-
-        <!-- Photo -->
-        <div class="relative mx-auto w-48 h-48 md:w-56 md:h-56">
-          <div
-            class="absolute inset-0 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-3xl blur-3xl opacity-40 neon-glow">
-          </div>
-          <img src="me.jpg" alt="Faria Usman"
-            class="relative w-full h-full object-cover rounded-3xl border-4 border-violet-400 neon-glow" />
-        </div>
-
-        <!-- Name -->
-        <div class="text-center">
-          <h1
-            class="text-3xl md:text-4xl font-bold tracking-tighter bg-gradient-to-r from-violet-300 to-fuchsia-300 bg-clip-text text-transparent">
-            FARIA USMAN
-          </h1>
-          <p class="text-violet-400 text-base md:text-lg font-medium mt-1">
-            Frontend Developer & AI Enthusiast
-          </p>
-        </div>
-
-        <!-- Contact -->
-        <div>
-          <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2">
-            <i class="fas fa-user-circle"></i> CONTACT
-          </h3>
-          <div class="space-y-3 text-sm text-zinc-300">
-            <p class="flex items-center gap-3"><i class="fas fa-envelope text-violet-400"></i> fariausman17@gmail.com
-            </p>
-            <p class="flex items-center gap-3"><i class="fas fa-phone text-violet-400"></i> 0312-0000000</p>
-            <p class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-violet-400"></i> Karachi, Pakistan
-            </p>
-            <p class="flex items-center gap-3"><i class="fab fa-github text-violet-400"></i> github.com/fariau</p>
-            <p class="flex items-center gap-3"><i class="fab fa-linkedin text-violet-400"></i>
-              linkedin.com/in/faria-usman</p>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div>
-          <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2">
-            <i class="fas fa-graduation-cap"></i> EDUCATION
-          </h3>
-          <div class="space-y-5 text-sm">
-            <div>
-              <p class="font-semibold text-white">B.Com</p>
-              <p class="text-zinc-400">University of Karachi</p>
-            </div>
-            <div>
-              <p class="font-semibold text-white">Intermediate (Commerce)</p>
-              <p class="text-zinc-400">Govt. Girls College</p>
-            </div>
-            <div>
-              <p class="font-semibold text-white">Matric (Computer Science)</p>
-              <p class="text-zinc-400">Scholars School</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Languages -->
-        <div>
-          <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2">
-            <i class="fas fa-language"></i> LANGUAGES
-          </h3>
-          <div class="flex flex-wrap gap-3">
-            <span
-              class="px-5 py-2 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-2xl text-sm">English</span>
-            <span
-              class="px-5 py-2 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-2xl text-sm">Urdu</span>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <section>
-          <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2">
-            <i class="fas fa-code"></i> SKILLS
-          </h3>
-          <div class="flex flex-wrap gap-2.5">
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs"> CLI
-              Tools</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs"> Claude
-              Code (AI CLI Assistant)</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">
-              Next.js</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">
-              React.js </span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">
-              TypeScript</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">
-              Tailwind CSS</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">
-              JavaScript</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs"> HTML &
-              CSS </span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs"> Git &
-              GitHub </span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">
-              Python</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">
-              Docusaurus</span>
-            <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs"> Prompt
-              Engineering</span>
-          </div>
-        </section>
+      <!-- Photo -->
+      <div class="relative mx-auto w-48 h-48 md:w-56 md:h-56">
+        <div class="absolute inset-0 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-3xl blur-3xl opacity-40 neon-glow"></div>
+        <img src="me.jpg" alt="Faria Usman" class="relative w-full h-full object-cover rounded-3xl border-4 border-violet-400 neon-glow" />
       </div>
 
-      <!-- ==================== RIGHT COLUMN ==================== -->
-      <div class="md:col-span-7 p-6 md:p-8 space-y-8 md:space-y-10">
-        <div>
-          <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">
-            Frontend Developer & AI Enthusiast
-          </h2>
+      <!-- Name -->
+      <div class="text-center">
+        <h1 class="text-3xl md:text-4xl font-bold tracking-tighter bg-gradient-to-r from-violet-300 to-fuchsia-300 bg-clip-text text-transparent">FARIA USMAN</h1>
+        <p class="text-violet-400 text-base md:text-lg font-medium mt-1">Frontend Developer & AI Engineer</p>
+      </div>
 
-          <p class="text-zinc-400 mt-4 leading-relaxed text-base md:text-lg">
-            Passionate and self-driven Frontend Developer with expertise in building modern, responsive, and visually
-            appealing web applications using Next.js, React, TypeScript, HTML, CSS, and Tailwind CSS.
-
-            I also have strong knowledge of Python, Docusaurus, Prompt Engineering, and Claude Code (AI-powered CLI
-            assistant),
-            which helps me combine development with AI-powered solutions, automation, and documentation workflows.
-            <br>
-            Currently enrolled in the Governor Initiative for Artificial Intelligence and Computing (GIAIC),
-            specializing in AI, Web 3.0 & Metaverse. I enjoy turning ideas into elegant digital solutions and
-            continuously improving my technical and creative skills.
-          </p>
-        </div>
-
-        <!-- Projects -->
-        <section>
-          <h3 class="uppercase text-sm tracking-widest text-violet-400 font-semibold mb-6 flex items-center gap-2">
-            <i class="fas fa-briefcase"></i> PROJECTS
-          </h3>
-          <div class="space-y-6 md:space-y-7 text-sm">
-            <div>
-              <h4 class="font-semibold text-white text-base md:text-lg">Personal Portfolio Website</h4>
-              <p class="text-violet-400 text-sm">Next.js • Tailwind CSS</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-white text-base md:text-lg">Shareable Resume Builder</h4>
-              <p class="text-violet-400 text-sm">Next.js • TypeScript • Tailwind CSS</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-white text-base md:text-lg">Humanoid Robotics Book</h4>
-              <p class="text-violet-400 text-sm">Docusaurus • Claude CLI • Markdown</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-white text-base md:text-lg">Todo Application</h4>
-              <p class="text-violet-400 text-sm">Next.js • TypeScript • Tailwind CSS</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Achievements & Certificates -->
-        <section>
-          <h3 class="uppercase text-sm tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2">
-            <i class="fas fa-trophy"></i> ACHIEVEMENTS & CERTIFICATES
-          </h3>
-
-          <ul class="text-sm text-zinc-400 space-y-3">
-
-            <li class="flex items-start gap-3">
-              <span class="text-violet-400 mt-1">•</span>
-              Selected for Frontend Developer Internship
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-violet-400 mt-1">•</span>
-              Governor Initiative for Artificial Intelligence and Computing (GIAIC) – AI, Web 3.0 & Metaverse
-              <span class="text-violet-300">(Ongoing)</span>
-            </li>
-
-            <!-- CERTIFICATES ADDED -->
-            <li class="flex items-start gap-3">
-              <span class="text-violet-400 mt-1">•</span>
-              Master ChatGPT – UniAthena Certificate
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-violet-400 mt-1">•</span>
-              Basics of Python – UniAthena Certificate
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-violet-400 mt-1">•</span>
-              Introduction to HTML & CSS – Alison Certificate
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-violet-400 mt-1">•</span>
-              Certified HTML Developer – W3Schools Certificate
-            </li>
-
-            <li class="flex items-start gap-3">
-              <span class="text-violet-400 mt-1">•</span>
-              Basics of Artificial Intelligence – UniAthena Certificate
-            </li>
-
-          </ul>
-        </section>
-
-        <!-- Hiring Box -->
-        <div class="bg-zinc-900/70 border border-zinc-700 rounded-2xl p-3 text-center">
-          <p class="text-zinc-400 text-sm font-medium">
-            Available for Frontend Developer Internships & Web Development Projects
-          </p>
+      <!-- Contact -->
+      <div>
+        <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2"><i class="fas fa-user-circle"></i> CONTACT</h3>
+        <div class="space-y-3 text-sm text-zinc-300">
+          <p class="flex items-center gap-3"><i class="fas fa-envelope text-violet-400"></i> fariausman17@gmail.com</p>
+          <p class="flex items-center gap-3"><i class="fas fa-phone text-violet-400"></i> 0312-0000000</p>
+          <p class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-violet-400"></i> Karachi, Pakistan</p>
+          <p class="flex items-center gap-3"><i class="fab fa-github text-violet-400"></i> github.com/fariau</p>
+          <p class="flex items-center gap-3"><i class="fab fa-linkedin text-violet-400"></i> linkedin.com/in/faria-usman</p>
+          <p class="flex items-center gap-3"><i class="fas fa-globe text-violet-400"></i> portfolio-website-six-ebon.vercel.app</p>
         </div>
       </div>
+
+      <!-- Education -->
+      <div>
+        <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2"><i class="fas fa-graduation-cap"></i> EDUCATION</h3>
+        <div class="space-y-5 text-sm">
+          <div>
+            <p class="font-semibold text-white">B.Com</p>
+            <p class="text-zinc-400">University of Karachi</p>
+          </div>
+          <div>
+            <p class="font-semibold text-white">Intermediate (Commerce)</p>
+            <p class="text-zinc-400">Govt. Girls College</p>
+          </div>
+          <div>
+            <p class="font-semibold text-white">Matric (Computer Science)</p>
+            <p class="text-zinc-400">Scholars School</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div>
+        <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2"><i class="fas fa-language"></i> LANGUAGES</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-5 py-2 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-2xl text-sm">English</span>
+          <span class="px-5 py-2 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-2xl text-sm">Urdu</span>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <section>
+        <h3 class="uppercase text-xs tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2"><i class="fas fa-code"></i> SKILLS</h3>
+        <div class="flex flex-wrap gap-2.5">
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">HTML & CSS</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">JavaScript</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">TypeScript</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">React.js</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Next.js</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Tailwind CSS</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Python</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Streamlit</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Docusaurus</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Git & GitHub</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">CLI Tools</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Prompt Engineering</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Claude Code</span>
+          <span class="px-3 py-1.5 bg-zinc-800 border border-violet-500/30 text-violet-300 rounded-xl text-xs">Vercel</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="md:col-span-7 p-6 md:p-8 space-y-8 md:space-y-10">
+
+      <!-- Summary -->
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Frontend Developer & AI Engineer</h2>
+        <p class="text-zinc-400 mt-4 leading-relaxed text-base">
+          Passionate Frontend Developer & AI Engineer with expertise in building modern, responsive web applications using Next.js, React, TypeScript, HTML, CSS, and Tailwind CSS. I also work with Python & Streamlit for AI-based tools and automation, Docusaurus for documentation, and Claude Code for AI-assisted development workflows.<br><br>
+          Currently enrolled in the Governor Initiative for Artificial Intelligence and Computing (GIAIC), specializing in AI, Web 3.0 & Metaverse. Portfolio: <a href="https://portfolio-website-six-ebon.vercel.app" target="_blank" class="text-violet-400 hover:text-violet-300">portfolio-website-six-ebon.vercel.app</a>
+        </p>
+      </div>
+
+      <!-- Experience -->
+      <section>
+        <h3 class="uppercase text-sm tracking-widest text-violet-400 font-semibold mb-6 flex items-center gap-2"><i class="fas fa-briefcase"></i> EXPERIENCE</h3>
+        <div class="relative border-l-2 border-violet-500/30 pl-5">
+          <div class="relative">
+            <div class="absolute -left-[25px] top-1 w-3 h-3 rounded-full bg-violet-500"></div>
+            <div class="flex items-start justify-between flex-wrap gap-2">
+              <div>
+                <h4 class="font-semibold text-white text-base">Frontend Developer Intern</h4>
+                <p class="text-violet-400 text-sm font-medium">Nexe-Agent · AI-Powered Software Solutions</p>
+              </div>
+              <span class="text-xs text-zinc-500 bg-zinc-800 px-3 py-1 rounded-full border border-zinc-700">May 2026</span>
+            </div>
+            <p class="text-zinc-400 text-sm mt-2 leading-relaxed">Successfully completed 1-month Frontend Developer Internship. Worked on real-world projects, contributed to the team's development workflow, and demonstrated dedication and professional growth.</p>
+            <div class="flex flex-wrap gap-2 mt-3">
+              <span class="px-2 py-1 bg-zinc-800 border border-violet-500/20 text-violet-300 rounded-lg text-xs">Next.js</span>
+              <span class="px-2 py-1 bg-zinc-800 border border-violet-500/20 text-violet-300 rounded-lg text-xs">TypeScript</span>
+              <span class="px-2 py-1 bg-zinc-800 border border-violet-500/20 text-violet-300 rounded-lg text-xs">Tailwind CSS</span>
+              <span class="px-2 py-1 bg-zinc-800 border border-violet-500/20 text-violet-300 rounded-lg text-xs">React.js</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section>
+        <h3 class="uppercase text-sm tracking-widest text-violet-400 font-semibold mb-5 flex items-center gap-2"><i class="fas fa-code-branch"></i> FEATURED PROJECTS</h3>
+        <div class="space-y-4 text-sm">
+
+          <!-- EduFlow -->
+          <div class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-4">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <div>
+                <h4 class="font-semibold text-white text-base">EduFlow — E-Learning Platform</h4>
+                <p class="text-violet-400 text-xs mt-0.5">Next.js 15 • TypeScript • Tailwind CSS • Vercel</p>
+              </div>
+              <div class="flex gap-2">
+                <a href="https://e-learning-app-new.vercel.app" target="_blank" class="text-xs text-violet-400 border border-violet-500/30 px-2 py-1 rounded-lg hover:text-violet-300">Live ↗</a>
+              </div>
+            </div>
+            <p class="text-zinc-400 text-xs mt-2">Full-stack e-learning app with YouTube video lessons, progress tracking, student dashboard, and responsive design.</p>
+          </div>
+
+          <!-- Nike Hackathon -->
+          <div class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-4">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <div>
+                <h4 class="font-semibold text-white text-base">Nike Website — Hackathon Project</h4>
+                <p class="text-violet-400 text-xs mt-0.5">Next.js • Tailwind CSS</p>
+              </div>
+              <a href="https://hackathon03-template03.vercel.app/" target="_blank" class="text-xs text-violet-400 border border-violet-500/30 px-2 py-1 rounded-lg hover:text-violet-300">Live ↗</a>
+            </div>
+            <p class="text-zinc-400 text-xs mt-2">E-commerce website built during hackathon with product listings and modern UI.</p>
+          </div>
+
+          <!-- Humanoid Book -->
+          <div class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-4">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <div>
+                <h4 class="font-semibold text-white text-base">Physical AI & Humanoid Robotics Textbook</h4>
+                <p class="text-violet-400 text-xs mt-0.5">Docusaurus • Claude Code • Markdown</p>
+              </div>
+              <a href="https://physical-ai-humanoid-robotics-book-beige.vercel.app/" target="_blank" class="text-xs text-violet-400 border border-violet-500/30 px-2 py-1 rounded-lg hover:text-violet-300">Live ↗</a>
+            </div>
+            <p class="text-zinc-400 text-xs mt-2">Structured technical documentation book built with Docusaurus and AI-assisted writing via Claude Code.</p>
+          </div>
+
+          <!-- Secure Data -->
+          <div class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-4">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <div>
+                <h4 class="font-semibold text-white text-base">Secure Data Encryption System</h4>
+                <p class="text-violet-400 text-xs mt-0.5">Python • Streamlit</p>
+              </div>
+              <a href="https://project05securedataencryption-45plyfepvd2y6f5hy6jarv.streamlit.app/" target="_blank" class="text-xs text-violet-400 border border-violet-500/30 px-2 py-1 rounded-lg hover:text-violet-300">Live ↗</a>
+            </div>
+            <p class="text-zinc-400 text-xs mt-2">Data encryption and decryption app built with Python and Streamlit.</p>
+          </div>
+
+          <!-- Shareable Resume -->
+          <div class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-4">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <div>
+                <h4 class="font-semibold text-white text-base">Shareable Resume Builder</h4>
+                <p class="text-violet-400 text-xs mt-0.5">Next.js • TypeScript • Tailwind CSS</p>
+              </div>
+              <a href="https://hackathon-milestone-05-ashy.vercel.app/" target="_blank" class="text-xs text-violet-400 border border-violet-500/30 px-2 py-1 rounded-lg hover:text-violet-300">Live ↗</a>
+            </div>
+          </div>
+
+        </div>
+        <p class="text-xs text-zinc-500 mt-3">50+ more projects at: <a href="https://portfolio-website-six-ebon.vercel.app" class="text-violet-400">portfolio-website-six-ebon.vercel.app</a></p>
+      </section>
+
+      <!-- Achievements & Certificates -->
+      <section>
+        <h3 class="uppercase text-sm tracking-widest text-violet-400 font-semibold mb-4 flex items-center gap-2"><i class="fas fa-trophy"></i> ACHIEVEMENTS & CERTIFICATES</h3>
+        <ul class="text-sm text-zinc-400 space-y-3">
+
+          <!-- Internship Certificate — highlighted -->
+          <li class="flex items-start gap-3 bg-violet-500/10 border border-violet-500/20 rounded-xl px-4 py-3">
+            <span class="text-violet-400 mt-0.5">🏆</span>
+            <div>
+              <p class="text-white font-semibold">Frontend Developer Internship Certificate</p>
+              <p class="text-violet-400 text-xs mt-0.5">Nexe-Agent · AI-Powered Software Solutions · May 2026</p>
+             </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="text-violet-400 mt-1">•</span>
+            Governor Initiative for AI & Computing (GIAIC) – AI, Web 3.0 & Metaverse <span class="text-violet-300 ml-1">(Ongoing)</span>
+          </li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-1">•</span> Prompt Engineering in 30 Minutes – AI IXX Certificate</li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-1">•</span> Python for AI – AI IXX Certificate</li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-1">•</span> Master ChatGPT – UniAthena Certificate</li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-1">•</span> Basics of Python – UniAthena Certificate</li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-1">•</span> Basics of Artificial Intelligence – UniAthena Certificate</li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-1">•</span> Introduction to HTML & CSS – Alison Certificate</li>
+          <li class="flex items-start gap-3"><span class="text-violet-400 mt-1">•</span> Certified HTML Developer – W3Schools Certificate</li>
+        </ul>
+      </section>
+
+      <!-- Hiring Box -->
+      <div class="bg-zinc-900/70 border border-zinc-700 rounded-2xl p-3 text-center">
+        <p class="text-zinc-400 text-sm font-medium">Available for Frontend Developer Roles & Web Development Projects</p>
+      </div>
+
     </div>
   </div>
+</div>
 </body>
-
 </html>
